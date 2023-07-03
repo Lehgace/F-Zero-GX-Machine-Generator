@@ -21,6 +21,18 @@ lastnames = readNames(lastnames, 'last names.txt')
 # Populate All Pilot Names
 allnames = sorted(firstnames + middlenames + lastnames)
 
+class PilotData:
+    """Contains data for a pilot
+    
+    Planned for future integration."""
+    def __init__(self, fname, age, sex, mname=None, lname=None):
+        self.age = age
+        self.sex = sex
+        self.fname = fname
+        self.mname = mname
+        self.lname = lname
+
+
 
 # Methods to pick Pilot first name, middle name, last name
 def pickPilotFName(nameselect):
@@ -40,11 +52,21 @@ def pickPilotLName(nameselect):
 
 def pickPilotNumber():
     """Return randomly picked pilot number."""
-    pnumpick = random.randrange(0, 100)
+    pnumpick = random.randrange(100)
     return pnumpick
 
+def pickPilotAge():
+    """Return randomly picked pilot age."""
+    agepick = random.randrange(100)
+    return agepick
+
+def pickPilotSex():
+    "Return randomly picked pilot sex"
+    sexpick = "Male" if random.randrange(2) == 0 else "Female"
+    return sexpick
+
 # Methods to assemble full pilot information
-def AssemblePilot(nameselect, middleoption, lastoption):
+def assemblePilot(nameselect, middleoption, lastoption):
     """Return string containing pilot first name, middle name, and last name combined.
     
     Uses user input from main.py to decide whether or not to include middle name/last name."""
@@ -56,7 +78,7 @@ def AssemblePilot(nameselect, middleoption, lastoption):
         pilotname = pickPilotFName(nameselect)
     return pilotname
 
-def AssemblePilotNumber():
+def assemblePilotNumber():
     """Return string containing pilot number, 00 zero padding."""
     pilotnumber = "NO. " + str(pickPilotNumber()).zfill(2)
     return pilotnumber
