@@ -23,3 +23,8 @@ def chooseContent(boolean, list, all):
     else:
         listpick = all[random.randrange(0, len(all))]
     return listpick
+
+def convertBool(command):
+        """Takes a character and returns a boolean."""
+        option = True if command == 'y' else False
+        return option
