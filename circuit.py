@@ -53,17 +53,17 @@ def pickCircuitTitle():
     return circuitpick
 
 # Method to assemble location, track, and circuit
-def AssembleLocation(listselect):
+def assembleLocation(listselect):
     """Return string containing the location prefix and suffix combined."""
     locationtitle = pickLocPrefix(listselect) + ' ' + pickLocSuffix(listselect)
     return locationtitle
 
-def AssembleTrack(listselect):
+def assembleTrack(listselect):
     """Return string containing the track prefix and suffix combined."""
     tracktitle = pickTrackPrefix(listselect) + ' ' + pickTrackSuffix(listselect)
     return tracktitle
 
-def AssembleCircuit():
+def assembleCircuit():
     """Return string containing the circuit title."""
     circuittitle = pickCircuitTitle() + " Cup"
     return circuittitle
