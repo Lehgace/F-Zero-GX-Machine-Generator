@@ -49,7 +49,4 @@ The idea comes from my fascination of F-Zero GX. I thought the different names f
 * Option to write history or user-specified content to files
 * Overhaul to web based application
 
-## This sounds great! How can I try it out for myself?
-As of right now, a functional prototype is available for use. To replicate the original experience, run the application in Visual Studio Code. Download the project files, run main.py, follow the onscreen instructions and you should be good to go!
-
 ![falconsalute](https://github.com/Lehgace/F-Zero-GX-Machine-Generator/assets/122835808/2850884b-28fe-41bc-a28a-a54f7b4066ae)
