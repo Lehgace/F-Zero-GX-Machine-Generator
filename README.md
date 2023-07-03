@@ -1,4 +1,4 @@
-# F-Zero GX Machine Generator
+# F-Zero GX Machine Generator - Version (0.0.2)
 
 ## What is F-Zero GX Machine Generator?
 This application acts as a random name generator for various F-Zero GX related content. Ever wanted to see a randomly generated F-Zero GX machine name, pilot name, or track title? This application aims to satisfy that curiosity.
@@ -36,15 +36,15 @@ The goal of this project is to eventually create an interactie website that peop
 The idea comes from my fascination of F-Zero GX. I thought the different names for the machines and pilots in the game was cool. So I thought it would be interesting to create an application where you can randomly mix-and-match the names of various machines and pilot names to see what Frankenstein creations are possible.
 
 ### Planned Future Additions and WIP
-* Overhauling the UI to be more streamlined and user friendly
+* Overhauling the UI to be more streamlined and user friendly _(In-Progress)_
 * Overhauling the UI to include various menus and displays for toggleable and viewable content instead of being terminal-based
 * Addition of Custom Machines titles from the game
 * Option to add custom prefixes, suffixes, etc.
-* Duplicate prevention modfier (no more Wonder Wonder, Stingray Stingray)
-* Adding settings menu to edit available modifiers
+* Duplicate prevention modifier (no more Wonder Wonder, Stingray Stingray)
+* Adding settings menu to edit available modifiers _(In-Progress)_
 * Adding additional machine stats such as weight, boost, grip; viewable from machine profile
 * Adding additional pilot information such as sex and age (idea of custom bios entertained but on the backburner for now); viewable from pilot profile
-* Ability to generate batches of custom machines, pilots, courses by a user specified amount
+* Ability to generate batches of custom machines, pilots, courses by a user specified amount _(In-Progress)_
 * Log history that shows a history of your randomly generated content
 * Option to write history or user-specified content to files
 * Overhaul to web based application
