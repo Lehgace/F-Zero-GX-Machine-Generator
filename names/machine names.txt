@@ -1,0 +1,41 @@
+00,	Deathborn	            , Dark Schneider
+01,	Mighty Gazelle	        , Red Gazelle
+02,	Jody Summer	            , White Cat
+03,	Dr. Stewart	            , Golden Fox
+04,	Baba	                , Iron Tiger
+05,	Samurai Goroh	        , Fire Stingray
+06,	Pico	                , Wild Goose
+07,	Captain Falcon	        , Blue Falcon
+08,	Octoman	                , Deep Claw
+09,	Mr. EAD	                , Great Star
+10,	James McCloud	        , Little Wyvern
+11,	Billy	                , Mad Wolf
+12,	Kate Alen	            , Super Piranha
+13,	Zoda	                , Death Anchor
+14,	Jack Levin	            , Astro Robin
+15,	Bio Rex	                , Big Fang
+16,	The Skull	            , Sonic Phantom
+17,	Antonio Guster	        , Green Panther
+18,	Beastman	            , Hyper Speeder
+19,	Leon	                , Space Angler
+20,	Super Arrow	            , King Meteor
+21,	Mrs. Arrow	            , Queen Meteor
+22,	Gomar & Shioh	        , Twin Noritta
+23,	Silver Neelsen	        , Night Thunder
+24,	Michael Chain	        , Wild Boar
+25,	Blood Falcon	        , Blood Hawk
+26,	John Tanaka	            , Wonder Wasp
+27,	Draq	                , Mighty Typhoon
+28,	Roger Buster	        , Mighty Hurricane
+29,	Dr. Clash	            , Crazy Bear
+30,	Black Shadow	        , Black Bull
+31,	Don Genie	            , Fat Shark	
+32,	Terry "Digi-Boy" Getter	, Cosmic Dolphin	
+33,	Dai San Gen	            , Pink Spider	
+34,	Spade	                , Magic Seagull	
+35,	Dai Goroh	            , Silver Rat	
+36,	Princia Ramode	        , Spark Moon	
+37,	Lily Flyer	            , Bunny Flash	
+38,	PJ	                    , Groovy Taxi	
+39,	QQQ	                    , Rolling Turtle	
+40,	Phoenix	                , Rainbow Phoenix

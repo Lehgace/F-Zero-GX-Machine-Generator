@@ -1,0 +1,10 @@
+Blue
+City
+Field
+Ocean
+Palace
+Plant
+Road
+Space
+Terminal
+Town
