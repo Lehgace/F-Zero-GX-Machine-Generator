@@ -30,7 +30,7 @@ def pickMachineSuffix(listselect):
 
 
 # Method to assemble full machine name
-def AssembleMachine(listselect):
+def assembleMachine(listselect):
     """Return string containing machine prefix and suffix combined."""
     machinetitle = pickMachinePrefix(listselect) + ' ' + pickMachineSuffix(listselect)
     return machinetitle
