@@ -1,4 +1,4 @@
-# F-Zero GX Machine Generator - Version (0.0.4)
+# F-Zero GX Machine Generator - Version (0.0.5)
 ![spinningfalcon](https://github.com/Lehgace/F-Zero-GX-Machine-Generator/assets/122835808/3602e423-b2a8-4cba-90f3-68fe1e580c4b)
 
 ## What is F-Zero GX Machine Generator?
@@ -49,3 +49,5 @@ The idea comes from my fascination of F-Zero GX. I thought the different names f
 * Overhaul to web based application
 
 ![falconsalute](https://github.com/Lehgace/F-Zero-GX-Machine-Generator/assets/122835808/2850884b-28fe-41bc-a28a-a54f7b4066ae)
+
+F-Zero GX Machine Generator is a non-profit fan-based parody on F-Zero GX. It is not, affiliated, associated, endorsed, sponsored or approved by Nintendo or Capcom. This was developed simply for entertainment purposes of F-Zero GX fans and players.
