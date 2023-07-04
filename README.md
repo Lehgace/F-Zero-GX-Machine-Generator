@@ -30,7 +30,7 @@ Next the program randomly selects a prefix and suffix to create a new machine ti
 The application can do this for pilot names, pilot numbers, track locations, track names, as well as other current and planned additions. It also contains options for various modifiers, such as creating a machine using two prefixes/suffixes instead of a pair of prefixes and suffixes.
 
 ## What is the goal of this project?
-The goal of this project is to eventually create an interactie website that people can use to randomly mix-and-match the names of various F-Zero GX machines and pilots. Not only just the names, but as well as show a fusion of the machines and potentially pilots and courses. The application would mainly serve as a form of entertainment, something to satisfy your boredom. 
+The goal of this project is to eventually create an interactive website that people can use to randomly mix-and-match the names of various F-Zero GX machines and pilots. Not only just the names, but as well as show a fusion of the machines and potentially pilots and courses. The application would mainly serve as a form of entertainment, something to satisfy your boredom. 
 
 The idea comes from my fascination of F-Zero GX. I thought the different names for the machines and pilots in the game was cool. So I thought it would be interesting to create an application where you can randomly mix-and-match the names of various machines and pilot names to see what Frankenstein creations are possible.
 
