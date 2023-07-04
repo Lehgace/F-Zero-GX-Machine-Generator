@@ -27,7 +27,7 @@ def generateCircuit(circuitselect):
     
     Uses bcolors in terminal to distinguish titles from text.
     """
-    print("\t\tYou will be racing in {}{}{}, on {}{}{}, from the {}{}{}\n".format(bcolors.OKBLUE, 
+    print("\t\tYou will be racing in {}{}{}, on {}{}{}, from the {}{}{}".format(bcolors.OKBLUE, 
                                                                      assembleLocation(circuitselect), 
                                                                      bcolors.ENDC, 
                                                                      bcolors.OKCYAN, 
@@ -49,7 +49,7 @@ settings = Settings()
 
 while(True):
     """Endless while loop that will prompt user to randomly generate machine, pilot, and circuit content."""
-    command = input("Press Enter to begin machine generation, m to view modifiers, q to quit ")
+    command = input("\nPress Enter to begin machine generation, m to view modifiers, q to quit ")
     """Menu for user navigation of program.
     
     case 'q': Quit program and exit
@@ -70,5 +70,4 @@ while(True):
                 settings.toggleAllCircuits(convertBool(input("\tWould you like to pull from all available circuit suffixes and prefixes? (y/n) " )))
                 settings.changeBatches(int(input("\tEnter number of batches to print: ")))
         case _:
-            
             randomizer(settings)
