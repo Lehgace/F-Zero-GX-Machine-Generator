@@ -56,7 +56,6 @@ while(True):
     case 'm': Settings menu that contains the various modifiers.
     """
     match command:
-        
         case 'q':
             break
         case 'm':
