@@ -50,4 +50,4 @@ The idea comes from my fascination of F-Zero GX. I thought the different names f
 
 ![falconsalute](https://github.com/Lehgace/F-Zero-GX-Machine-Generator/assets/122835808/2850884b-28fe-41bc-a28a-a54f7b4066ae)
 
-F-Zero GX Machine Generator is a non-profit fan-based parody on F-Zero GX. It is not, affiliated, associated, endorsed, sponsored or approved by Nintendo or Capcom. This was developed simply for entertainment purposes of F-Zero GX fans and players.
+F-Zero GX Machine Generator is a non-profit fan-based parody on F-Zero GX. It is not, affiliated, associated, endorsed, sponsored or approved by Amusement Vision or Nintendo. This was developed simply for entertainment purposes of F-Zero GX fans and players.
