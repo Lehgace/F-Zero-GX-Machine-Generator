@@ -4,23 +4,15 @@ from machine import assembleMachine
 from pilot import assemblePilot, assemblePilotNumber
 from circuit import assembleCircuit, assembleLocation, assembleTrack
 from settings import Settings
-from methods import convertBool
+from methods import convertBool, bcolors
 
-"""Blender build scripts for terminal print usage"""
-class bcolors:
-    OKBLUE = '\033[94m'
-    OKCYAN = '\033[96m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
 
 def generateMachinePilot(nameselect, middleselect, lastselect, listselect):
     """Method to print a string containing the randomly-generated machine name, pilot number, and pilot name.
        
     Uses bcolors in terminal to emphasize titles from text.
     """
-    print("\t\tYour machine is the {}{}{}, piloted by {}{}{}, {}{}{}".format(bcolors.OKCYAN, 
+    print("\n\t\tYour machine is the {}{}{}, piloted by {}{}{}, {}{}{}".format(bcolors.OKCYAN, 
                                                                      assembleMachine(listselect), 
                                                                      bcolors.ENDC, 
                                                                      bcolors.WARNING, 
@@ -57,7 +49,7 @@ settings = Settings()
 
 while(True):
     """Endless while loop that will prompt user to randomly generate machine, pilot, and circuit content."""
-    command = input("\nPress Enter to begin machine generation, m to edit modifiers, q to quit\n")
+    command = input("Press Enter to begin machine generation, m to view modifiers, q to quit ")
     """Menu for user navigation of program.
     
     case 'q': Quit program and exit
@@ -68,12 +60,15 @@ while(True):
         case 'q':
             break
         case 'm':
-            settings.toggleAllNames(convertBool(input("\tWould you like to pull from all available name lists? (y/n)" )))
-            settings.toggleMiddle(convertBool(input("\tWould you like your pilot to have a middle name? (y/n) ")))
-            settings.toggleLast(convertBool(input("\tWould you like your pilot to have a last name? (y/n) " )))
-            settings.toggleAllMorphemes(convertBool(input("\tWould you like to pull from all available machine suffixes and prefixes? (y/n) " )))
-            settings.toggleAllCircuits(convertBool(input("\tWould you like to pull from all available circuit suffixes and prefixes? (y/n) " )))
-            settings.changeBatches(int(input("\tEnter number of batches to print: ")))
+            settings.printSettings()
+            edit = input("Press Enter to exit modifiers, e to edit modifiers ")
+            if edit == 'e':
+                settings.toggleAllNames(convertBool(input("\tWould you like to pull from all available name lists? (y/n)" )))
+                settings.toggleMiddle(convertBool(input("\tWould you like your pilot to have a middle name? (y/n) ")))
+                settings.toggleLast(convertBool(input("\tWould you like your pilot to have a last name? (y/n) " )))
+                settings.toggleAllMorphemes(convertBool(input("\tWould you like to pull from all available machine suffixes and prefixes? (y/n) " )))
+                settings.toggleAllCircuits(convertBool(input("\tWould you like to pull from all available circuit suffixes and prefixes? (y/n) " )))
+                settings.changeBatches(int(input("\tEnter number of batches to print: ")))
         case _:
             
             randomizer(settings)
