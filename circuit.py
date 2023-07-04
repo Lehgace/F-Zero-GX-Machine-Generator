@@ -24,7 +24,16 @@ tracksuffixes = readNames(tracksuffixes, 'tracksuffixes.txt')
 morphemes = sorted(locprefixes + locsuffixes + trackprefixes + tracksuffixes)
 
 # Populate list of Circuit Titles
-circuits = ["Ruby", "Sapphire", "Emerald", "Diamond", "AX", "Jade", "Opal", "Amber", "Amethyst"]
+cups = ["Ruby", "Sapphire", "Emerald", "Diamond", "AX", "Jade", "Opal", "Amber", "Amethyst"]
+
+class Circuit:
+    """Prototype implementation of Circuit class"""
+    def __init__(self, trackTitle = None, courseTitle = None, cupTitle = None, circuit=[]):
+        self.trackTitle = trackTitle
+        self.courseTitle = courseTitle
+        self.cupTitle = cupTitle
+        self.circuit = circuit
+    pass
 
 # Methods to pick prefixes and suffixes for location and track, pick circuit
 def pickLocPrefix(listselect):
@@ -49,7 +58,7 @@ def pickTrackSuffix(listselect):
 
 def pickCircuitTitle():
     """Return randomly picked circuit title"""
-    circuitpick = circuits[random.randrange(len(circuits))]
+    circuitpick = cups[random.randrange(len(cups))]
     return circuitpick
 
 # Method to assemble location, track, and circuit
@@ -65,5 +74,5 @@ def assembleTrack(listselect):
 
 def assembleCircuit():
     """Return string containing the circuit title."""
-    circuittitle = pickCircuitTitle() + " Cup"
-    return circuittitle
+    cuptitle = pickCircuitTitle() + " Cup"
+    return cuptitle
