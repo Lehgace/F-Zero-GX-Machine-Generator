@@ -1,15 +1,14 @@
-# F-Zero GX Machine Generator - Version (0.0.3)
+# F-Zero GX Machine Generator - Version (0.0.4)
+![spinningfalcon](https://github.com/Lehgace/F-Zero-GX-Machine-Generator/assets/122835808/3602e423-b2a8-4cba-90f3-68fe1e580c4b)
 
 ## What is F-Zero GX Machine Generator?
 This application acts as a random name generator for various F-Zero GX related content. Ever wanted to see a randomly generated F-Zero GX machine name, pilot name, or track title? This application aims to satisfy that curiosity.
 
-### Example Generations (strict modifers)
-![strict](https://github.com/Lehgace/F-Zero-GX-Machine-Generator/assets/122835808/670bb722-a955-4e7d-89de-2ff1b93fae63)
-![7strict](https://github.com/Lehgace/F-Zero-GX-Machine-Generator/assets/122835808/6f994686-c951-4606-be67-afe03e904844)
-### Example Generations (unrestricted modifers)
-![free](https://github.com/Lehgace/F-Zero-GX-Machine-Generator/assets/122835808/ca39279f-e132-4409-a703-490df90dba39)
-![7free](https://github.com/Lehgace/F-Zero-GX-Machine-Generator/assets/122835808/40640bdd-42cb-484b-afbe-ed3a82796a70)
+### Example Generations 
+![randomizerdemo](https://github.com/Lehgace/F-Zero-GX-Machine-Generator/assets/122835808/c27c8b6b-5585-4406-87fc-fd11c998c7b8)
 
+### Settings Used For Above Generations
+![settingsdemo](https://github.com/Lehgace/F-Zero-GX-Machine-Generator/assets/122835808/899de9c8-fa0f-499f-8f21-cb787d716612)
 
 ## How does it work?
 The program contains text files which hold the original names of various F-Zero machines, pilots, tracks, etc. The text files are read by the application to generate lists of potential combinations for a random number generator to randomly select elements from the populated lists. This leads to the creation of random mix-and-match combinations of F-Zero GX objects that are different from the original lists. For instance, there are more than 3000 possible combinations possible from mixing and matching the prefixes and suffixes of the original 41 machines! Let's look at a specific example. 
