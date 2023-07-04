@@ -2,6 +2,15 @@
 """Contains various methods used to streamline populatation of several lists and randomly picking elements from lists."""
 import random
 
+"""Blender build scripts for terminal print usage"""
+class bcolors:
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    
 def readNames(list, filename):
     """Return populated list containing content from an opened .txt file.
     
