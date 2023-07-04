@@ -4,45 +4,45 @@ from machine import assembleMachine
 from pilot import assemblePilot, assemblePilotNumber
 from circuit import assembleCircuit, assembleLocation, assembleTrack
 from settings import Settings
-from methods import convertBool, bcolors
+from functions import convertBool, bcolors
 
 
-def generateMachinePilot(nameselect, middleselect, lastselect, listselect):
-    """Method to print a string containing the randomly-generated machine name, pilot number, and pilot name.
+def generateMachinePilot(name_select, middle_select, last_select, list_select):
+    """Function to print a string containing the randomly-generated machine name, pilot number, and pilot name.
        
     Uses bcolors in terminal to emphasize titles from text.
     """
-    print("\n\t\tYour machine is the {}{}{}, piloted by {}{}{}, {}{}{}".format(bcolors.OKCYAN, 
-                                                                     assembleMachine(listselect), 
-                                                                     bcolors.ENDC, 
-                                                                     bcolors.WARNING, 
+    print("\n\t\tYour machine is the {}{}{}, piloted by {}{}{}, {}{}{}".format(bcolors.cyan, 
+                                                                     assembleMachine(list_select), 
+                                                                     bcolors.end, 
+                                                                     bcolors.yellow, 
                                                                      assemblePilotNumber(),
-                                                                     bcolors.ENDC,
-                                                                     bcolors.OKGREEN,
-                                                                     assemblePilot(nameselect, middleselect, lastselect),
-                                                                     bcolors.ENDC))
+                                                                     bcolors.end,
+                                                                     bcolors.green,
+                                                                     assemblePilot(name_select, middle_select, last_select),
+                                                                     bcolors.end))
     
-def generateCircuit(circuitselect):
-    """Method to print a string containing the randomly-generated location, track name, and cup title.
+def generateCircuit(circuit_select):
+    """Function to print a string containing the randomly-generated location, track name, and cup title.
     
     Uses bcolors in terminal to distinguish titles from text.
     """
-    print("\t\tYou will be racing in {}{}{}, on {}{}{}, from the {}{}{}".format(bcolors.OKBLUE, 
-                                                                     assembleLocation(circuitselect), 
-                                                                     bcolors.ENDC, 
-                                                                     bcolors.OKCYAN, 
-                                                                     assembleTrack(circuitselect),
-                                                                     bcolors.ENDC,
-                                                                     bcolors.FAIL,
+    print("\t\tYou will be racing in {}{}{}, on {}{}{}, from the {}{}{}".format(bcolors.blue, 
+                                                                     assembleLocation(circuit_select), 
+                                                                     bcolors.end, 
+                                                                     bcolors.cyan, 
+                                                                     assembleTrack(circuit_select),
+                                                                     bcolors.end,
+                                                                     bcolors.red,
                                                                      assembleCircuit(),
-                                                                     bcolors.ENDC))
+                                                                     bcolors.end))
 
 
 def randomizer(settings):
     """Used to create multiple combinations at a time."""
     for _ in range(settings.batches):
-        generateMachinePilot(settings.useAllNames, settings.useMiddleName, settings.useLastName, settings.useAllMorphemes)
-        generateCircuit(settings.useAllCircuits)
+        generateMachinePilot(settings.use_all_names, settings.use_middle_name, settings.use_last_name, settings.use_all_morphemes)
+        generateCircuit(settings.use_all_circuits)
 
 # Main Runtime Execution
 settings = Settings()

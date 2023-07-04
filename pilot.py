@@ -1,82 +1,81 @@
 # Joshua Erickson, joshmerickson19@gmail.com, F-Zero Machine Generator Python Implementation
-"""Contains all method and list declarations used for generation of pilot names."""
+"""Contains all function and list declarations used for generation of pilot names."""
 import random
-from methods import readNames, chooseContent
+from functions import readNames, chooseContent
 
-# Methods to populate name lists
+# Functions to populate name lists
 # Populate First Names
-firstnames = []
-firstnames = readNames(firstnames, 'first names.txt')
+first_names = []
+first_names = readNames(first_names, 'firstnames.txt')
 
 # Populate Middle Names
-middlenames = []
-middlenames = readNames(middlenames, 'middle names.txt')
+middle_names = []
+middle_names = readNames(middle_names, 'middlenames.txt')
 
 # Populate Last Names
-lastnames = []
-lastnames = readNames(lastnames, 'last names.txt')
+last_names = []
+last_names = readNames(last_names, 'lastnames.txt')
 
 # Populate All Pilot Names
-allnames = sorted(firstnames + middlenames + lastnames)
+all_names = sorted(first_names + middle_names + last_names)
 
 class PilotData:
     """Contains data for a pilot
     
     Planned for future integration."""
-    def __init__(self, fname, age, sex, mname=None, lname=None):
+    def __init__(self, f_name, age, sex, m_name=None, l_name=None):
         self.age = age
         self.sex = sex
-        self.fname = fname
-        self.mname = mname
-        self.lname = lname
+        self.f_name = f_name
+        self.m_name = m_name
+        self.l_name = l_name
 
 
-
-# Methods to pick Pilot first name, middle name, last name
-def pickPilotFName(nameselect):
+# Functions to pick Pilot first name, middle name, last name
+def pickPilotFName(name_select):
     """Return randomly picked pilot first name."""
-    fnamepick = chooseContent(nameselect, firstnames, allnames)
-    return fnamepick
+    f_name_pick = chooseContent(name_select, first_names, all_names)
+    return f_name_pick
 
-def pickPilotMName(nameselect):
+def pickPilotMName(name_select):
     """Return randomly picked pilot middle name."""
-    mnamepick = chooseContent(nameselect, middlenames, allnames)
-    return mnamepick
+    m_name_pick = chooseContent(name_select, middle_names, all_names)
+    return m_name_pick
 
-def pickPilotLName(nameselect):
+def pickPilotLName(name_select):
     """Return randomly picked pilot last name."""
-    lnamepick = chooseContent(nameselect, lastnames, allnames)
-    return lnamepick
+    l_name_pick = chooseContent(name_select, last_names, all_names)
+    return l_name_pick
 
 def pickPilotNumber():
     """Return randomly picked pilot number."""
-    pnumpick = random.randrange(100)
-    return pnumpick
+    p_num_pick = random.randrange(100)
+    return p_num_pick
 
 def pickPilotAge():
     """Return randomly picked pilot age."""
-    agepick = random.randrange(100)
-    return agepick
+    age_pick = random.randrange(100)
+    return age_pick
 
 def pickPilotSex():
     "Return randomly picked pilot sex"
-    sexpick = "Male" if random.randrange(2) == 0 else "Female"
-    return sexpick
+    sex_pick = "Male" if random.randrange(2) == 0 else "Female"
+    return sex_pick
 
-# Methods to assemble full pilot information
-def assemblePilot(nameselect, middleoption, lastoption):
+# Functions to assemble full pilot information
+def assemblePilot(name_select, middle_option, last_option):
     """Return string containing pilot first name, middle name, and last name combined.
     
     Uses user input from main.py to decide whether or not to include middle name/last name."""
-    if (middleoption == True):
-        pilotname = pickPilotFName(nameselect) + ' ' + pickPilotMName(nameselect) + ' ' + pickPilotLName(nameselect)
-    elif(lastoption == True):
-        pilotname = pickPilotFName(nameselect) + ' ' + pickPilotLName(nameselect)
+    if (middle_option == True):
+        pilot_name = pickPilotFName(name_select) + ' ' + pickPilotMName(name_select) + ' ' + pickPilotLName(name_select)
+    elif(last_option == True):
+        pilot_name = pickPilotFName(name_select) + ' ' + pickPilotLName(name_select)
     else:
-        pilotname = pickPilotFName(nameselect)
-    return pilotname
+        pilot_name = pickPilotFName(name_select)
+    return pilot_name
 
 def assemblePilotNumber():
     """Return string containing pilot number, 00 zero padding."""
-    pilotnumber = "NO. " + str(pickPilotNumber()).zfill(2)
-    return pilotnumber
+    pilot_number = "NO. " + str(pickPilotNumber()).zfill(2)
+    return pilot_number

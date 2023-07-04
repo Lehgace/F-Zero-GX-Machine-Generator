@@ -1,78 +1,78 @@
 # Joshua Erickson, joshmerickson19@gmail.com, F-Zero Machine Generator Python Implementation
-"""Contains all method and list declarations used for generation of circuit titles."""
+"""Contains all function and list declarations used for generation of circuit titles."""
 import random
-from methods import readNames, chooseContent
+from functions import readNames, chooseContent
 
-# Methods to populate morpheme lists
+# Functions to populate morpheme lists
 # Populate Location Prefixes
-locprefixes = []
-locprefixes = readNames(locprefixes, 'locprefixes.txt')
+loc_prefixes = []
+loc_prefixes = readNames(loc_prefixes, 'locprefixes.txt')
 
 # Populate Location Suffixes
-locsuffixes = []
-locsuffixes = readNames(locsuffixes, 'locsuffixes.txt')
+loc_suffixes = []
+loc_suffixes = readNames(loc_suffixes, 'locsuffixes.txt')
 
 # Populate Track Prefixes
-trackprefixes = []
-trackprefixes = readNames(trackprefixes, 'trackprefixes.txt')
+track_prefixes = []
+track_prefixes = readNames(track_prefixes, 'trackprefixes.txt')
 
 # Populate Track Suffixes
-tracksuffixes = []
-tracksuffixes = readNames(tracksuffixes, 'tracksuffixes.txt')
+track_suffixes = []
+track_suffixes = readNames(track_suffixes, 'tracksuffixes.txt')
 
 # Populate All Track and Location morphemes
-morphemes = sorted(locprefixes + locsuffixes + trackprefixes + tracksuffixes)
+morphemes = sorted(loc_prefixes + loc_suffixes + track_prefixes + track_suffixes)
 
 # Populate list of Circuit Titles
 cups = ["Ruby", "Sapphire", "Emerald", "Diamond", "AX", "Jade", "Opal", "Amber", "Amethyst"]
 
 class Circuit:
     """Prototype implementation of Circuit class"""
-    def __init__(self, trackTitle = None, courseTitle = None, cupTitle = None, circuit=[]):
-        self.trackTitle = trackTitle
-        self.courseTitle = courseTitle
-        self.cupTitle = cupTitle
+    def __init__(self, track_title = None, course_title = None, cup_title = None, circuit=[]):
+        self.track_title = track_title
+        self.course_title = course_title
+        self.cup_title = cup_title
         self.circuit = circuit
     pass
 
-# Methods to pick prefixes and suffixes for location and track, pick circuit
-def pickLocPrefix(listselect):
+# Functions to pick prefixes and suffixes for location and track, pick circuit
+def pickLocPrefix(list_select):
     """Return randomly picked location prefix"""
-    prefixpick = chooseContent(listselect, locprefixes, morphemes)
-    return prefixpick
+    prefix_pick = chooseContent(list_select, loc_prefixes, morphemes)
+    return prefix_pick
 
-def pickLocSuffix(listselect):
+def pickLocSuffix(list_select):
     """Return randomly picked location suffix"""
-    suffixpick = chooseContent(listselect, locsuffixes, morphemes)
-    return suffixpick
+    suffix_pick = chooseContent(list_select, loc_suffixes, morphemes)
+    return suffix_pick
 
-def pickTrackPrefix(listselect):
+def pickTrackPrefix(list_select):
     """Return randomly picked track prefix"""
-    prefixpick = chooseContent(listselect, trackprefixes, morphemes)
-    return prefixpick
+    prefix_pick = chooseContent(list_select, track_prefixes, morphemes)
+    return prefix_pick
 
-def pickTrackSuffix(listselect):
+def pickTrackSuffix(list_select):
     """Return randomly picked track prefix"""
-    suffixpick = chooseContent(listselect, tracksuffixes, morphemes)
-    return suffixpick
+    suffix_pick = chooseContent(list_select, track_suffixes, morphemes)
+    return suffix_pick
 
 def pickCircuitTitle():
     """Return randomly picked circuit title"""
-    circuitpick = cups[random.randrange(len(cups))]
-    return circuitpick
+    circuit_pick = cups[random.randrange(len(cups))]
+    return circuit_pick
 
-# Method to assemble location, track, and circuit
-def assembleLocation(listselect):
+# Function to assemble location, track, and circuit
+def assembleLocation(list_select):
     """Return string containing the location prefix and suffix combined."""
-    locationtitle = pickLocPrefix(listselect) + ' ' + pickLocSuffix(listselect)
-    return locationtitle
+    location_title = pickLocPrefix(list_select) + ' ' + pickLocSuffix(list_select)
+    return location_title
 
-def assembleTrack(listselect):
+def assembleTrack(list_select):
     """Return string containing the track prefix and suffix combined."""
-    tracktitle = pickTrackPrefix(listselect) + ' ' + pickTrackSuffix(listselect)
-    return tracktitle
+    track_title = pickTrackPrefix(list_select) + ' ' + pickTrackSuffix(list_select)
+    return track_title
 
 def assembleCircuit():
     """Return string containing the circuit title."""
-    cuptitle = pickCircuitTitle() + " Cup"
-    return cuptitle
+    cup_title = pickCircuitTitle() + " Cup"
+    return cup_title

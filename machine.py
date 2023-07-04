@@ -1,10 +1,10 @@
 # Joshua Erickson, joshmerickson19@gmail.com, F-Zero Machine Generator Python Implementation
-"""Contains all method and list declarations used for generation of machine names."""
-from methods import readNames, chooseContent
+"""Contains all function and list declarations used for generation of machine names."""
+from functions import readNames, chooseContent
 
 # To-Do: Add additional machine info (Body, Boost, Grip, Weight, Made By)
 
-# Methods to populate morpheme lists
+# Functions to populate morpheme lists
 # Populate Prefixes
 prefixes = []
 prefixes = readNames(prefixes, 'prefixes.txt')
@@ -17,20 +17,20 @@ suffixes = readNames(suffixes, 'suffixes.txt')
 morphemes = sorted(prefixes + suffixes)
 
 
-# Methods to pick Machine Prefix and Suffix
-def pickMachinePrefix(listselect):
+# Functions to pick Machine Prefix and Suffix
+def pickMachinePrefix(list_select):
     """Return randomly picked machine prefix."""
-    prefixpick = chooseContent(listselect, prefixes, morphemes)
-    return prefixpick
+    prefix_pick = chooseContent(list_select, prefixes, morphemes)
+    return prefix_pick
 
-def pickMachineSuffix(listselect):
+def pickMachineSuffix(list_select):
     """Return randomly picked machine suffix."""
-    suffixpick = chooseContent(listselect, suffixes, morphemes)
-    return suffixpick
+    suffix_pick = chooseContent(list_select, suffixes, morphemes)
+    return suffix_pick
 
 
-# Method to assemble full machine name
-def assembleMachine(listselect):
+# Function to assemble full machine name
+def assembleMachine(list_select):
     """Return string containing machine prefix and suffix combined."""
-    machinetitle = pickMachinePrefix(listselect) + ' ' + pickMachineSuffix(listselect)
-    return machinetitle
+    machine_title = pickMachinePrefix(list_select) + ' ' + pickMachineSuffix(list_select)
+    return machine_title
