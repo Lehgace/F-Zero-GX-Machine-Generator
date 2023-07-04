@@ -3,8 +3,6 @@
 import random
 from methods import readNames, chooseContent
 
-# To-Do: add fields for additional pilot data (sex, age, bio?)
-
 # Methods to populate name lists
 # Populate First Names
 firstnames = []
