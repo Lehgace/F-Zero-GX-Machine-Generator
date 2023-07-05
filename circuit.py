@@ -58,7 +58,7 @@ def pickTrackSuffix(list_select):
 
 def pickCircuitTitle():
     """Return randomly picked circuit title"""
-    circuit_pick = cups[random.randrange(len(cups))]
+    circuit_pick = random.choice(cups)
     return circuit_pick
 
 # Function to assemble location, track, and circuit

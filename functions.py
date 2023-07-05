@@ -28,9 +28,9 @@ def chooseContent(boolean, list, all):
     User specifies which list to use in main.py.
     Uses random randrange to randomly pick element from list."""
     if (boolean == False):
-        list_pick = list[random.randrange(0, len(list))]
+        list_pick = random.choice(list)
     else:
-        list_pick = all[random.randrange(0, len(all))]
+        list_pick = random.choice(all)
     return list_pick
 
 def convertBool(command):
