@@ -1,4 +1,4 @@
-# F-Zero GX Machine Generator - Version (0.0.5)
+# F-Zero GX Machine Generator - Version (0.0.6)
 ![spinningfalcon](https://github.com/Lehgace/F-Zero-GX-Machine-Generator/assets/122835808/3602e423-b2a8-4cba-90f3-68fe1e580c4b)
 
 ## What is F-Zero GX Machine Generator?
@@ -40,10 +40,10 @@ The idea comes from my fascination of F-Zero GX. I thought the different names f
 * Addition of Custom Machines titles from the game
 * Option to add custom prefixes, suffixes, etc.
 * Duplicate prevention modifier (no more Wonder Wonder, Stingray Stingray)
-* _(In-Progress)_ Adding settings menu to edit available modifiers
+* _(Near Completion)_ Adding settings menu to edit available modifiers
 * Adding additional machine stats such as weight, boost, grip; viewable from machine profile
 * _(In-Progress)_ Adding additional pilot information such as sex and age (idea of custom bios entertained but on the backburner for now); viewable from pilot profile
-* _(In-Progress)_ Ability to generate batches of custom machines, pilots, courses by a user specified amount
+* _(Near Completion)_ Ability to generate batches of custom machines, pilots, courses by a user specified amount
 * Log history that shows a history of your randomly generated content
 * Option to write history or user-specified content to files
 * Overhaul to web based application
